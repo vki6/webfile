@@ -36,7 +36,8 @@
 			<app-header _ngcontent-dms-c24="" _nghost-dms-c22="">
 				<div _ngcontent-dms-c22="" class="header">
 					<nav _ngcontent-dms-c22="" class="navbar navbar-expand-lg navbar-light bg-light">
-						<div _ngcontent-dms-c22="" class="container-fluid"><a _ngcontent-dms-c22="" routerlink="/welcome" class="navbar-brand" href="https://vki6.github.io/webfile/"><img _ngcontent-dms-c22="" src="https://illamthedikalvi.tnschools.gov.in/assets/logo/itklogo.png" width="190" alt="இல்லம் தேடிக் கல்வி சின்னம் / ILLAM THEDI KALVI logo "></a><button _ngcontent-dms-c22="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span _ngcontent-dms-c22="" class="navbar-toggler-icon"></span></button>
+						<div _ngcontent-dms-c22="" class="container-fluid"><a _ngcontent-dms-c22="" routerlink="/welcome" class="navbar-brand" href="https://vki6.github.io/webfile/"><img _ngcontent-dms-c22="" src="https://illamthedikalvi.tnschools.gov.in/assets/logo/itklogo.png" width="190" alt="இல்லம் தேடிக் கல்வி சின்னம் / ILLAM THEDI KALVI logo "></a>
+							<button _ngcontent-dms-c22="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" onclick="fun()"><span _ngcontent-dms-c22="" class="navbar-toggler-icon"></span></button>
 							<div _ngcontent-dms-c22="" id="navbarSupportedContent" class="collapse navbar-collapse"><ul _ngcontent-dms-c22="" class="navbar-nav ms-auto mb-2 mb-lg-0"><li _ngcontent-dms-c22="" class="nav-item"><a _ngcontent-dms-c22="" routerlinkactive="active" routerlink="/Welcome" class="nav-link" href="https://vki6.github.io/webfile/">Home</a></li><li _ngcontent-dms-c22="" class="nav-item"><a _ngcontent-dms-c22="" routerlinkactive="active" routerlink="/contactus" class="nav-link active" href="https://vki6.github.io/webfile/contact.html">Contact Us</a></li></ul>
 							</div>
 						</div>
@@ -100,6 +101,19 @@
 <script src="scripts.09ba7575aa31e308924e.js" defer=""></script>
 <script src="main.e32533372d1892cdaea6.js" defer=""></script>
 
+<script>
+function fun(){
+	var x = document.getElementById("navbarSupportedContent");
+	if(x.classList.contains("show")){
+		x.classList.remove("show");
+	}
+	else{
+		x.classList.add("show");
+	}
+	
+}
+</script>	    
+	    
 </body>
 </body>
 </html>
