@@ -45,7 +45,7 @@
 				<nav _ngcontent-vee-c22="" class="navbar navbar-expand-lg navbar-light bg-light">
 					<div _ngcontent-vee-c22="" class="container-fluid">
 						<a _ngcontent-vee-c22="" routerlink="/welcome" class="navbar-brand" href="https://vki6.github.io/webfile/"><img _ngcontent-vee-c22="" src="https://illamthedikalvi.tnschools.gov.in/assets/logo/itklogo.png" width="190" alt="இல்லம் தேடிக் கல்வி சின்னம் / ILLAM THEDI KALVI logo "></a>
-						<button _ngcontent-vee-c22="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span _ngcontent-vee-c22="" class="navbar-toggler-icon"></span></button>
+						<button _ngcontent-vee-c22="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" onclick="fun()"><span _ngcontent-vee-c22="" class="navbar-toggler-icon"></span></button>
 						<div _ngcontent-vee-c22="" id="navbarSupportedContent" class="collapse navbar-collapse">
 							<ul _ngcontent-vee-c22="" class="navbar-nav ms-auto mb-2 mb-lg-0">
 								<li _ngcontent-vee-c22="" class="nav-item"><a _ngcontent-vee-c22="" routerlinkactive="active" routerlink="/Welcome" class="nav-link active" href="https://vki6.github.io/webfile/">Home</a></li>
@@ -175,6 +175,26 @@
 	<script src="scripts.09ba7575aa31e308924e.js" defer=""></script>
 	<script src="main.e32533372d1892cdaea6.js" defer=""></script>
 
+<script>
+function fun(){
+	var x = document.getElementById("navbarSupportedContent");
+	var y = document.getElementById("demo");
+	if(x.classList.contains("show")){
+		x.classList.remove("show");
+	}
+	else{
+		x.classList.add("show");
+	}
+	if(y.classList.contains("imgback")){
+		y.classList.remove("imgback");
+	}
+	else{
+		y.classList.add("imgback");
+	}
+}
+</script>
+	
+	
 <style>
  .fleft{
      display: inline-block;
@@ -182,6 +202,13 @@
  .fright{
      float: right;
  }
+.show{
+	z-index: 2;
+}
+.imgback{
+	z-index: -1;
+}
+	
 </style>
 
 </body>
